@@ -3,6 +3,7 @@ from data_formatting import filter_english_articles_and_duplicate, consolidate_d
 from clustering import EnhancedArticleClusterer, determine_category_for_cluster, make_categorisations
 from interaction import HeadlineViewer, generate_html_report, send_email
 
+
 #headline extraction
 concat_headlines_news_api = get_top_headlines_from_news_api(verbose = True)
 newsio_headlines = get_headlines_from_newsio()

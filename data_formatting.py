@@ -35,7 +35,7 @@ def filter_english_articles_and_duplicate(articles):
 
     return filtered
 
-def (newsapi_list, newsio_list, gnews_list):
+def consolidate_dataframe(newsapi_list, newsio_list, gnews_list):
     """
     Consolidates lists of articles from various sources (APIs) into a single master list.
 
