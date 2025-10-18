@@ -3,7 +3,13 @@ import time
 import os
 from dotenv import load_dotenv
 
-def get_top_headlines_from_news_api(api_key=None, verbose=False):
+load_dotenv(dotenv_path="environmentvariables.env")
+
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+NEWSIOAPI_KEY = os.getenv("NEWSIOAPI_KEY")
+GNEWSAPI_KEY = os.getenv("GNEWSAPI_KEY")
+
+def get_top_headlines_from_news_api(verbose=False):
     """
     Fetch top headlines from multiple news outlets using the NewsAPI.
     
@@ -14,8 +20,6 @@ def get_top_headlines_from_news_api(api_key=None, verbose=False):
     Returns:
         list: List of [title, description, content] for all retrieved articles.
     """
-    
-    api_key = "8bddbba85b004b4691bbe155fd04de5a"
 
     list_of_sources  = ['cnn', 'new-york-magazine', 'reuters', 'the-washington-post', 'the-washington-times', 'associated-press', 'abc-news-au', 'australian-financial-review', 'google-news-au', 'news-com-au', 'aftenposten', 'nrk', 'ansa', 'il-sole-24-ore', 'football-italia', 'google-news-it', 'la-repubblica', 'argaam', 'google-news-sa', 'sabq', 'the-express-tribune', 'dawn', 'jang', 'the-news-international', 'brecorder', 'bbc-news', 'independent', 'wired-de', 'wirtschafts-woche', 'blasting-news-br', 'globo', 'google-news-br', 'info-money', 'cbc-news', 'financial-post', 'google-news-ca', 'the-globe-and-mail', 'el-mundo', 'google-news-ar', 'infobae', 'la-gaceta', 'la-nacion', 'google-news-fr', 'le-monde', 'les-echos', 'liberation', 'google-news-in', 'the-hindu', 'the-times-of-india', 'the-jerusalem-post', 'ynet', 'lenta', 'rbc', 'rt', 'tass', 'vedomosti', 'kommersant', 'the-moscow-times', 'goteborgs-posten', 'svenska-dagbladet', 'news24', 'eNCA', 'SABC News', 'Daily Maverick', 'The Mail & Guardian', 'Eyewitness News', 'RTE', 'RTL Nieuws', 'techcrunch-cn', 'xinhua-net']
 
@@ -26,7 +30,7 @@ def get_top_headlines_from_news_api(api_key=None, verbose=False):
         for outlet in list_of_sources:
             params = {
                 "sources": outlet,
-                "apiKey": api_key
+                "apiKey": NEWSAPI_KEY
             }
 
             response = session.get(url, params=params)
@@ -68,7 +72,6 @@ def get_headlines_from_newsio(reqs_per_min=15):
         list: List of [title, description, content] for all retrieved articles.
     """
 
-    API_KEY = "pub_054329f117d74dbba3b23e746cfede33"
     BASE_URL = "https://newsdata.io/api/1/latest"
 
     country_list = [
@@ -82,7 +85,7 @@ def get_headlines_from_newsio(reqs_per_min=15):
 
     for country_code in country_list:
         params = {
-            "apikey": API_KEY,
+            "apikey": NEWSIOAPI_KEY,
             "country": country_code,
             "language": "en",
             "category": "top"
@@ -170,13 +173,12 @@ def fetch_gnews_articles():
         'us'   # United States
     ]
 
-    gnews_api = "e694b3eee3802d3f6e6541a06ac9df2f"
     url = "https://gnews.io/api/v4/top-headlines"
 
     concat = []
     for country in country_codes:
         params = {
-            "apikey": gnews_api,
+            "apikey": GNEWSAPI_KEY,
             "categories": "-sports",
             "country": country,
             "lang": "en"

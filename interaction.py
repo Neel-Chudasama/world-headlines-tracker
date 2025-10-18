@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="environmentvariables.env")
+
 class HeadlineViewer:
     def __init__(self, final_enhanced_outputs):
         self.root = tk.Tk()

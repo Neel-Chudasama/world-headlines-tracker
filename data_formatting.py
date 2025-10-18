@@ -1,4 +1,7 @@
-import langid 
+import langid
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="environmentvariables.env")
 
 def filter_english_articles_and_duplicate(articles):
     """

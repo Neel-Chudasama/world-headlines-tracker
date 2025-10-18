@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="environmentvariables.env")
+
 class EnhancedArticleClusterer:
     def __init__(self, n_clusters='auto', method='kmeans', use_categories=False, 
                  category_weight=2):
