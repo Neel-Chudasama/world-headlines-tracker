@@ -15,7 +15,7 @@
 
 </div>
 
-## 🎯 Overview
+## Overview
 
 Wake up every morning to an **AI-curated digest** of the world's top news stories, automatically organised by theme. This pipeline harnesses the power of machine learning and natural language processing to help you spot emerging trends and potential market opportunities before they become obvious.
 
@@ -30,13 +30,13 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 
 ---
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
 <td width="50%">
 
-### 🔍 Intelligent News Extraction
+### Intelligent News Extraction
 - Pulls from multiple premium news APIs
 - Captures headlines, summaries and metadata
 - Covers global sources and regions
@@ -45,7 +45,7 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 </td>
 <td width="50%">
 
-### 🧠 Advanced ML Processing
+### Advanced ML Processing
 - K-Means clustering for topic discovery
 - Semantic similarity analysis
 - Automatic deduplication
@@ -56,7 +56,7 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 <tr>
 <td width="50%">
 
-### 📱 Beautiful Visualization
+### Beautiful Visualization
 - Interactive HTML dashboard
 - Mobile-responsive design
 - Category-based organization
@@ -65,7 +65,7 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 </td>
 <td width="50%">
 
-### 🚀 Automation Ready
+### Automation Ready
 - Email integration included
 - Scheduled execution support
 - Cloud deployment compatible
@@ -77,7 +77,7 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -126,7 +126,7 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 news-intelligence-pipeline/
@@ -160,7 +160,7 @@ news-intelligence-pipeline/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -216,25 +216,25 @@ That's it! Check your email for the daily digest. 📬
 
 ---
 
-## 🔧 How It Works
+## How It Works
 
-### Step 1: Data Extraction 📥
+### Step 1: Data Extraction 
 
 The pipeline queries multiple news APIs simultaneously, collecting the latest headlines and article summaries. Each source is processed independently and formatted into a standardized structure.
 
-### Step 2: Data Formatting 🧹
+### Step 2: Data Formatting 
 
 Raw data undergoes cleaning, normalisation and deduplication. Articles are merged into a unified dataset with consistent fields for downstream processing.
 
-### Step 3: ML Clustering 🤖
+### Step 3: ML Clustering 
 
 K-Means algorithm groups semantically similar headlines together. The optimal number of clusters is determined automatically based on the day's news volume and diversity.
 
-### Step 4: AI Labeling 🏷️
+### Step 4: AI Labeling 
 
 Google Gemini analyzes each cluster and generates descriptive category names that capture the essence of the grouped stories, making the output immediately understandable.
 
-### Step 5: Visualization & Delivery 📊
+### Step 5: Visualisation & Delivery 
 
 An interactive HTML dashboard is generated showing:
 - **Top 5 most-covered themes** of the day
@@ -258,7 +258,7 @@ The dashboard is automatically emailed to you in a mobile-friendly format.
 | 2 | 💹 Market Updates | 31 | ██████░░░░ 61% |
 | 3 | 🌍 Climate Action | 28 | █████░░░░░ 54% |
 | 4 | 💻 Tech Innovation | 19 | ████░░░░░░ 38% |
-| 5 | ⚽ Sports Highlights | 15 | ███░░░░░░░ 29% |
+| 5 | ⚽ Sports | 15 | ███░░░░░░░ 29% |
 
 *Actual output includes interactive HTML with expandable headline sections and styled components*
 
@@ -266,7 +266,7 @@ The dashboard is automatically emailed to you in a mobile-friendly format.
 
 ---
 
-## 🎨 Customisation
+## Customisation
 
 ### Adjusting Number of Categories
 
@@ -300,7 +300,7 @@ Or Task Scheduler (Windows) for automated daily execution.
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] **Sentiment Analysis** - Add emotion detection for each cluster
 - [ ] **Stock Ticker Matching** - Automatically identify mentioned companies
@@ -313,7 +313,7 @@ Or Task Scheduler (Windows) for automated daily execution.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -325,13 +325,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Neel Chudasama**
 
