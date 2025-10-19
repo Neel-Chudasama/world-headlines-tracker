@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
-*Automatically collect, classify, and visualize daily trending news from global sources using machine learning to identify market-moving themes.*
+*Automatically collect, classify and visualise daily trending news from global sources using machine learning to identify market-moving themes.*
 
 [Features](#-features) • [Quick Start](#-quick-start) • [How It Works](#-how-it-works) • [Demo](#-example-output)
 
