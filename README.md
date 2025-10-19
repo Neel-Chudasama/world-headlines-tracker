@@ -5,7 +5,6 @@
 ### *AI-Powered News Intelligence Pipeline for Market Insights*
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
 *Automatically collect, classify and visualise daily trending news from global sources using machine learning to identify market-moving themes.*
@@ -18,13 +17,13 @@
 
 ## 🎯 Overview
 
-Wake up every morning to an **AI-curated digest** of the world's top news stories, automatically organized by theme. This pipeline harnesses the power of machine learning and natural language processing to help you spot emerging trends and potential market opportunities before they become obvious.
+Wake up every morning to an **AI-curated digest** of the world's top news stories, automatically organised by theme. This pipeline harnesses the power of machine learning and natural language processing to help you spot emerging trends and potential market opportunities before they become obvious.
 
 ### What Makes This Special?
 
 - 🤖 **AI-Powered Clustering** - Machine learning groups similar stories automatically
 - 🏷️ **Smart Labeling** - Gemini AI generates human-readable category names
-- 📊 **Interactive Dashboard** - Beautiful HTML visualization of news trends
+- 📊 **Interactive Dashboard** - Beautiful HTML visualisation of news trends
 - 📧 **Email Delivery** - Daily digest sent straight to your inbox
 - 🌍 **Multi-Source Aggregation** - Combines NewsData.io, NewsAPI, and GNews
 - ⚡ **Fully Automated** - Set it and forget it
@@ -39,7 +38,7 @@ Wake up every morning to an **AI-curated digest** of the world's top news storie
 
 ### 🔍 Intelligent News Extraction
 - Pulls from multiple premium news APIs
-- Captures headlines, summaries, and metadata
+- Captures headlines, summaries and metadata
 - Covers global sources and regions
 - Real-time trending story detection
 
@@ -173,7 +172,7 @@ news-intelligence-pipeline/
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/yourusername/news-intelligence-pipeline.git
+git clone https://github.com/Neel-Chudasama/news-intelligence-pipeline.git
 cd news-intelligence-pipeline
 
 # 2️⃣ Create virtual environment
@@ -225,7 +224,7 @@ The pipeline queries multiple news APIs simultaneously, collecting the latest he
 
 ### Step 2: Data Formatting 🧹
 
-Raw data undergoes cleaning, normalization, and deduplication. Articles are merged into a unified dataset with consistent fields for downstream processing.
+Raw data undergoes cleaning, normalisation and deduplication. Articles are merged into a unified dataset with consistent fields for downstream processing.
 
 ### Step 3: ML Clustering 🤖
 
@@ -261,13 +260,13 @@ The dashboard is automatically emailed to you in a mobile-friendly format.
 | 4 | 💻 Tech Innovation | 19 | ████░░░░░░ 38% |
 | 5 | ⚽ Sports Highlights | 15 | ███░░░░░░░ 29% |
 
-*Actual output includes interactive HTML with expandable sections and styled components*
+*Actual output includes interactive HTML with expandable headline sections and styled components*
 
 </div>
 
 ---
 
-## 🎨 Customization
+## 🎨 Customisation
 
 ### Adjusting Number of Categories
 
@@ -334,7 +333,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**[Your Name]**
+**Neel Chudasama**
 
 Data Scientist | AI Enthusiast | Market Intelligence Specialist
 
