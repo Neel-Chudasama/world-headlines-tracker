@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📰 World Headlines Tracker for Stock Picks
+# World Headlines Tracker for Stock Picks
 
 ### *AI-Powered News Intelligence Pipeline for Market Insights*
 
