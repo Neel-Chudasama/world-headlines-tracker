@@ -19,14 +19,14 @@
 
 Wake up every morning to an **AI-curated digest** of the world's top news stories, automatically organised by theme. This pipeline harnesses the power of machine learning and natural language processing to help you spot emerging trends and potential market opportunities before they become obvious.
 
-### What Makes This Special?
+### What makes this special?
 
-- 🤖 **AI-Powered Clustering** - Machine learning groups similar stories automatically
-- 🏷️ **Smart Labeling** - Gemini AI generates human-readable category names
-- 📊 **Interactive Dashboard** - Beautiful HTML visualisation of news trends
-- 📧 **Email Delivery** - Daily digest sent straight to your inbox
-- 🌍 **Multi-Source Aggregation** - Combines NewsData.io, NewsAPI, and GNews
-- ⚡ **Fully Automated** - Set it and forget it
+- **AI-Powered Clustering** - Machine learning groups similar stories automatically
+- **Smart Labeling** - Gemini AI generates human-readable category names
+- **Interactive Dashboard** - Beautiful HTML visualisation of news trends
+- **Email Delivery** - Daily digest sent straight to your inbox
+- **Multi-Source Aggregation** - Combines NewsData.io, NewsAPI, and GNews
+- **Fully Automated** - Set it and forget it
 
 ---
 
