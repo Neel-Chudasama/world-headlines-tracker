@@ -2,7 +2,7 @@
 
 # World Headlines Tracker for Stock Picks
 
-### *AI-Powered News Intelligence Pipeline for Market Insights*
+### *AI-powered news intelligence pipeline for market insights*
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
