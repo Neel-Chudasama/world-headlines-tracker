@@ -3,6 +3,9 @@ from data_formatting import filter_english_articles_and_duplicate, consolidate_d
 from clustering import EnhancedArticleClusterer, determine_category_for_cluster, make_categorisations
 from interaction import HeadlineViewer, generate_html_report, send_email
 
+from dotenv import load_dotenv
+load_dotenv(dotenv_path="environmentvariables.env")
+
 
 #headline extraction
 concat_headlines_news_api = get_top_headlines_from_news_api(verbose = True)
@@ -32,4 +35,4 @@ final_filtered_data = make_categorisations(full_articles_database)
 
 #interactions for email
 html = generate_html_report(final_filtered_data)
-send_email(html, "neelc14@gmail.com")
+send_email(html, EMAIL_USER)

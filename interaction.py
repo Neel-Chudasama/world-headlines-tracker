@@ -236,8 +236,8 @@ def send_email(html_content, to_email):
     Note: The 'app_password' is used for gmail when using external scripts
     """
 
-    from_email = "neelc14@gmail.com"
-    app_password = "vhkajmgriskznivc"  # Use Gmail App Password
+    from_email = EMAIL_USER
+    app_password = EMAIL_APP_PASSWORD # Use Gmail App Password
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = "Your Morning News Digest"

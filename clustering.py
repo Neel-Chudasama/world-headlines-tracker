@@ -309,7 +309,7 @@ def determine_category_for_cluster(headline, description, google_api):
 def make_categorisations(full_articles_database):
     final_enhanced_outputs = []
     for i in full_articles_database:
-        result = determine_category_for_cluster(i['title'],i['description'])
+        result = determine_category_for_cluster(i['title'],i['description'], GOOGLE_API)
         
         if "error" in result:
             print(f"Failed to process {i['title']}: {result['error']}")
