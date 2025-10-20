@@ -1,6 +1,8 @@
 import os
 from dotenv import load_dotenv
 from collections import defaultdict
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 #load_dotenv(dotenv_path="environmentvariables.env") for local 
 load_dotenv()
