@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from collections import defaultdict
 
 #load_dotenv(dotenv_path="environmentvariables.env") for local 
 load_dotenv()
