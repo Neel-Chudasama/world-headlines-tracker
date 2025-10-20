@@ -15,7 +15,11 @@ articles_newsio_cleaned = filter_english_articles_and_duplicate(newsio_headlines
 articles_gnews_cleaned = filter_english_articles_and_duplicate(concat_gnews_articles)
 
 #consolidate dataframes
-full_articles_database = consolidate_dataframe
+full_articles_database = consolidate_dataframe(
+    articles_news_api_cleaned,
+    articles_newsio_cleaned,
+    articles_gnews_cleaned
+)
 
 #clustering of data headlines
 clusterer = EnhancedArticleClusterer(n_clusters='auto', method='kmeans', 
