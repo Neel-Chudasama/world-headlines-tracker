@@ -1,6 +1,12 @@
+import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="environmentvariables.env")
+#load_dotenv(dotenv_path="environmentvariables.env") for local 
+load_dotenv()
+
+EMAIL_USER = os.getenv("EMAIL_USER")
+EMAIL_APP_PASSWORD = os.getenv("EMAIL_APP_PASSWORD")
+
 
 class HeadlineViewer:
     def __init__(self, final_enhanced_outputs):

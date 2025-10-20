@@ -3,8 +3,17 @@ from data_formatting import filter_english_articles_and_duplicate, consolidate_d
 from clustering import EnhancedArticleClusterer, determine_category_for_cluster, make_categorisations
 from interaction import HeadlineViewer, generate_html_report, send_email
 
+import os
 from dotenv import load_dotenv
-load_dotenv(dotenv_path="environmentvariables.env")
+#load_dotenv(dotenv_path="environmentvariables.env") # for local 
+load_dotenv()
+
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+NEWSIOAPI_KEY = os.getenv("NEWSIOAPI_KEY")
+GNEWSAPI_KEY = os.getenv("GNEWSAPI_KEY")
+GOOGLE_API = os.getenv("GOOGLE_API")
+EMAIL_USER = os.getenv("EMAIL_USER")
+EMAIL_APP_PASSWORD = os.getenv("EMAIL_APP_PASSWORD")
 
 
 #headline extraction

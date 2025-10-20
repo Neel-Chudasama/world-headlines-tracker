@@ -1,6 +1,10 @@
+import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="environmentvariables.env")
+#load_dotenv(dotenv_path="environmentvariables.env") for local 
+load_dotenv()
+
+GOOGLE_API = os.getenv("GOOGLE_API")
 
 class EnhancedArticleClusterer:
     def __init__(self, n_clusters='auto', method='kmeans', use_categories=False, 
