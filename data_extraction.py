@@ -41,10 +41,10 @@ def get_top_headlines_from_news_api(verbose=False):
                 articles = data.get("articles", [])
 
                 results = [
-                    [
+                    {
                         article.get("title", ""),
                         article.get("description", ""),
-                    ]
+                    }
                     for article in articles
                 ]
                 concatenated.extend(results)
