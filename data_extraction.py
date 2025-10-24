@@ -75,6 +75,10 @@ def get_headlines_from_newsio(reqs_per_min=15):
 
     url = "https://newsdata.io/api/1/latest"
 
+    if not NEWSIOAPI_KEY:
+        print("ERROR: NEWSIOAPI_KEY is not set!")
+        return []
+
     country_list = [
     'us', 'gb', 'ca', 'au', 'in', 'sg', 'za', 'ie',
     'fr', 'de', 'it', 'es', 'br', 'jp', 'ru', 'cn',
