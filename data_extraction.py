@@ -73,7 +73,7 @@ def get_headlines_from_newsio(reqs_per_min=15):
         list: List of [title, description, content] for all retrieved articles.
     """
 
-    BASE_URL = "https://newsdata.io/api/1/latest"
+    url = "https://newsdata.io/api/1/latest"
 
     country_list = [
     'us', 'gb', 'ca', 'au', 'in', 'sg', 'za', 'ie',
@@ -93,7 +93,7 @@ def get_headlines_from_newsio(reqs_per_min=15):
         }
 
         try:
-            response = session.get(BASE_URL, params=params, timeout=10)
+            response = session.get(url, params=params, timeout=10)
             response.raise_for_status()
             data = response.json()
         except requests.exceptions.HTTPError as e:
@@ -105,7 +105,7 @@ def get_headlines_from_newsio(reqs_per_min=15):
                 time.sleep(wait)
                 # optionally retry once after sleeping
                 try:
-                    response = session.get(BASE_URL, params=params, timeout=10)
+                    response = session.get(url, params=params, timeout=10)
                     response.raise_for_status()
                     data = response.json()
                 except Exception as e2:
